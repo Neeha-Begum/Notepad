@@ -1,0 +1,10 @@
+<h1>Hello! Note anything you want to.</h1>
+<hr>
+<form method="POST">{% csrf_token %}
+    <label for="n1">Enter the Title</label>
+    <input name="title" id="n1" type="text" placeholder="Enter your text">
+    &nbsp &nbsp
+    <label for="n2">Enter your Description</label>
+    <input name="description" id="n2" type="text" placeholder="Enter your text">
+    <button>Submit</button>
+</form>

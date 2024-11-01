@@ -1,0 +1,12 @@
+<h2>This page is for Contacts</h2>
+<hr>
+<form method="POST">{% csrf_token %}
+    <label for="n1">Name:</label>
+    <input name="name" id="n1" type="text" placeholder="Enter Name">
+    <label for="n2">Contact Number:</label>
+    <input name="contact" id="n2" type="number" placeholder="Enter Number">
+    <button>Submit</button>
+</form>
+{% for i in res %}
+{{ i.name }}----{{ i.contact }}
+{% endfor %}
